@@ -4,6 +4,8 @@
 
 package com.mycompany.person;
 import javax.swing.*;
+//import org.junit.jupiter.api.Assertions.*;
+//import org.junit.jupiter.api.Test;
 
 /**
  *
@@ -21,6 +23,8 @@ public class Person {
     }
     public static void main(String[] args) {
         Student s1 = new Student();
+        Calculator calc = new Calculator();
+        calc.CalculatorTest();
     }
 }
 class Student extends Person {
@@ -41,3 +45,14 @@ class Course {
         CourseID = JOptionPane.showInputDialog("Input course ID: ");
     }
 }
+/*
+class Calculator{
+    public int addNumbers(int a, int b) {
+        return a + b;
+    }
+    @Test
+    public void CalculatorTest() {
+        assertEquals(10, this.addNumbers(3, 7))
+    }
+}
+*/
